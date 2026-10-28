@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Anh Vinh Nguyễn</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Custom scrollbar and print styles for a real CV feel */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-start items-center min-h-screen py-10 px-4">
+
+    <!-- Action Bar for Print/Download -->
+    <div class="absolute top-5 right-5 no-print">
+ 
+    </div>
+
+    <!-- CV Container (A4 aspect ratio approximation with max-w) -->
+    <div class="w-full max-w-[850px] bg-white shadow-2xl rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-12 text-slate-800">
+
+        <!-- CỘT BÊN TRÁI (Nền xám đậm / xanh đậm tối: #2c332e hoặc #252b27) -->
+        <div class="md:col-span-5 bg-[#252b27] text-white p-6 md:p-8 flex flex-col justify-between">
+            <div>
+                <!-- Ảnh đại diện -->
+                <div class="flex flex-col items-center mb-6">
+                    <div class="w-32 h-32 md:w-36 md:h-36 rounded-full bg-gray-400 overflow-hidden border-4 border-gray-500 shadow-inner flex items-center justify-center">
+                        <img src="download.png" alt="Ảnh đại diện Anh Vinh Nguyễn" class="w-full h-full object-cover" onerror="this.style.display='none';">
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-4 text-center tracking-wide">Anh Vinh Nguyễn</h1>
+                    <p class="text-gray-300 text-sm italic mt-1">Data Analyst Fresher</p>
+                </div>
+
+                <!-- Thông tin liên hệ -->
+                <div class="mb-6 space-y-2 text-sm border-t border-b border-gray-600 py-4 text-gray-300">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone w-4 text-gray-400"></i>
+                        <span>0976552631</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope w-4 text-gray-400"></i>
+                        <span class="break-all">vinh25248@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot w-4 text-gray-400"></i>
+                        <span>Phường Hiệp Bình, Thành phố Thủ Đức, TP. Hồ Chí Minh</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-calendar w-4 text-gray-400"></i>
+                        <span>26/09/2005</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-user w-4 text-gray-400"></i>
+                        <span>Giới tính: Nam</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-brands fa-github w-4 text-gray-400 mt-0.5"></i>
+                        <a href="https://github.com/ving309" target="_blank" rel="noopener noreferrer" class="break-all text-gray-300 hover:text-white underline">
+                            github.com/ving309
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mục tiêu nghề nghiệp -->
+                <div class="mb-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider mb-2 text-white border-l-2 border-emerald-500 pl-2">Mục tiêu nghề nghiệp</h2>
+                    <p class="text-xs text-gray-300 leading-relaxed italic">
+                        Mong muốn trở thành Data Analyst chuyên nghiệp, ứng dụng Python, SQL và tư duy phân tích dữ liệu để hỗ trợ doanh nghiệp đưa ra quyết định chính xác và hiệu quả.
+                    </p>
+                </div>
+
+                <!-- Kỹ năng -->
+                <div class="mb-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider mb-3 text-white border-l-2 border-emerald-500 pl-2">Kỹ năng</h2>
+                    
+                    <!-- Kỹ năng 1 -->
+                    <div class="mb-2">
+                        <div class="text-xs text-gray-300 mb-1">vibe coding</div>
+                        <div class="w-full bg-gray-600 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gray-300 h-full rounded-full" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Kỹ năng 2 -->
+                    <div class="mb-2">
+                        <div class="text-xs text-gray-300 mb-1">Python</div>
+                        <div class="w-full bg-gray-600 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gray-300 h-full rounded-full" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Kỹ năng 3 -->
+                    <div class="mb-2">
+                        <div class="text-xs text-gray-300 mb-1">SQL</div>
+                        <div class="w-full bg-gray-600 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gray-300 h-full rounded-full" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sở thích -->
+                <div class="mb-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider mb-2 text-white border-l-2 border-emerald-500 pl-2">Sở thích</h2>
+                    <ul class="text-xs text-gray-300 list-disc list-inside space-y-1">
+                        <li>xem tin tức</li>
+                        <li>Nghe nhạc</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CỘT BÊN PHẢI (Nền trắng) -->
+        <div class="md:col-span-7 p-6 md:p-8 space-y-6">
+
+            <!-- Học vấn -->
+            <div>
+                <div class="flex items-center gap-3 border-b pb-2 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
+                        <i class="fa-solid fa-lightbulb text-sm"></i>
+                    </div>
+                    <h2 class="text-base font-bold text-gray-900 uppercase tracking-wide">Học vấn</h2>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-sm font-bold text-gray-800">
+                            <span>KHOA HỌC DỮ LIỆU / DATA SCIENCE</span>
+                            <span class="text-xs text-gray-500 font-normal">2023 - dự kiến 2027</span>
+                        </div>
+                        <div class="text-xs font-semibold italic text-gray-600 mt-0.5">ĐẠI HỌC GIAO THÔNG VẬN TẢI TP. HỒ CHÍ MINH (UTH)</div>
+                        <p class="text-xs text-gray-500 mt-1">Đang theo học chuyên ngành Data Science, tập trung vào Python, SQL, thống kê và phân tích dữ liệu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kinh nghiệm làm việc -->
+            <div>
+                <div class="flex items-center gap-3 border-b pb-2 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
+                        <i class="fa-solid fa-users text-sm"></i>
+                    </div>
+                    <h2 class="text-base font-bold text-gray-900 uppercase tracking-wide">Kinh nghiệm làm việc</h2>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-sm font-bold text-gray-800">
+                            <span>DỰ ÁN NHÓM</span>
+                            <span class="text-xs text-gray-500 font-normal">2025</span>
+                        </div>
+                        <div class="text-xs font-semibold italic text-gray-600 mt-0.5">Xử lý ảnh – Nhóm 12</div>
+                        <p class="text-xs text-gray-500 mt-1">
+                            Tham gia xây dựng dự án xử lý ảnh bằng Python trong môi trường học tập thực tế; thực hiện tiền xử lý, xử lý và phân tích dữ liệu hình ảnh, đồng thời làm việc nhóm và quản lý mã nguồn trên GitHub.
+                        </p>
+                        <a href="https://github.com/Kienlaptrinh/Xu_ly_anh-Nhom_12" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-700 underline">
+                            Xem dự án trên GitHub
+                        </a>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-sm font-bold text-gray-800">
+                            <span>DỰ ÁN HỌC TẬP</span>
+                            <span class="text-xs text-gray-500 font-normal">2025 - Hiện tại</span>
+                        </div>
+                        <div class="text-xs font-semibold italic text-gray-600 mt-0.5">Sinh viên ngành Data Science</div>
+                        <p class="text-xs text-gray-500 mt-1">Thực hành phân tích dữ liệu, thống kê mô tả và trực quan hóa dữ liệu qua các bài tập nhóm và đồ án học phần.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hoạt động -->
+            <div>
+                <div class="flex items-center gap-3 border-b pb-2 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
+                        <i class="fa-solid fa-star text-sm"></i>
+                    </div>
+                    <h2 class="text-base font-bold text-gray-900 uppercase tracking-wide">Hoạt động</h2>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm font-bold text-gray-800">
+                        <span>Sinh viên</span>
+                        <span class="text-xs text-gray-500 font-normal">2023 - Hiện tại</span>
+                    </div>
+                    <div class="text-xs font-semibold italic text-gray-600 mt-0.5">Đại học Giao thông Vận tải TP. Hồ Chí Minh</div>
+                    <p class="text-xs text-gray-500 mt-1">Tham gia học tập, nghiên cứu và trao đổi kiến thức liên quan đến dữ liệu, lập trình và công nghệ.</p>
+                </div>
+            </div>
+
+            <!-- Người giới thiệu -->
+            <div>
+                <div class="flex items-center gap-3 border-b pb-2 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
+                        <i class="fa-solid fa-bookmark text-sm"></i>
+                    </div>
+                    <h2 class="text-base font-bold text-gray-900 uppercase tracking-wide">Người giới thiệu</h2>
+                </div>
+                <p class="text-xs text-gray-500 italic leading-relaxed">
+                    Sẽ cung cấp thông tin người giới thiệu theo yêu cầu của nhà tuyển dụng.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
